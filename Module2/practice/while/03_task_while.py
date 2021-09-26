@@ -9,4 +9,11 @@
 # 123
 # 1234
 
-# TODO: your code here
+n = int(input("n= "))
+i=1
+a = i
+
+while i<=n:
+    print(a)
+    i+=1
+    a=str(a)+str(i)
