@@ -5,3 +5,13 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+
+i=0
+numbers_new=[]
+while i<len(numbers):
+    if int(numbers[i])>0:
+        if int(numbers[i])**(1/2)%1==0:
+            numbers_new.append(int(numbers[i])**(1/2))
+    i+=1
+print(numbers_new)
