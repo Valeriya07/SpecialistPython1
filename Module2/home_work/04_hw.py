@@ -14,3 +14,17 @@
 #    #
 #    #
 ######
+
+a = int(input("a= "))
+i=1
+
+if a==3:
+    print('###')
+    print('# #')
+    print('###')
+else:
+    print (a*'#')
+    while i<=a-2:
+        print('#',(a-4)*' ','#')
+        i+=1
+    print (a*'#')
