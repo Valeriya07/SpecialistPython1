@@ -30,4 +30,9 @@
 # 19 189.81 Rub.
 # 20 199.8 Rub.
 
-# TODO: your code here
+n = float(input("стоимость товара= "))
+i=1
+
+while i<=20:
+    print(i,i*n,'Rub.')
+    i+=1
