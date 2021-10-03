@@ -2,4 +2,8 @@
 # Найдите самый большой элемент кортежа
 tup = (2, 4, 6, -4, 12, 0, 5)
 
-# TODO: your code here
+max_n=tup[0]
+for n in tup:
+    if n>max_n:
+        max_n=n
+print(max_n)
