@@ -5,7 +5,16 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+long_name=len(fruits[0])
+i=1
+
+for fruit in fruits:
+    if len(fruit)>long_name:
+        long_name=len(fruit)
+
+for el in fruits:
+    print(i,'. ',' '*(long_name-len(el)),el)
+    i+=1
 
 # Пример вывода:
 # 1. яблоко
