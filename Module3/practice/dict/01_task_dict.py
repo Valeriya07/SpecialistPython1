@@ -7,4 +7,5 @@
 item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "count": "10"}
 dollar_rate = 74.12
 
-# TODO: your code here
+
+print(float(item.get('price'))*dollar_rate*float(item.get('count')))
