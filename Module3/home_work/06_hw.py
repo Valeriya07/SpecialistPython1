@@ -32,14 +32,25 @@ items = [
     },
 ]
 # Найдите:
-print("Товары на складе представлены брэндами: ")
+dupl=[]
+for item in items:
+    dupl.append(item['brand'])
+woduplicates = set(dupl)
+print("Товары на складе представлены брэндами: ",woduplicates)
 
-# TODO: your code here
 
 print("На складе больше всего товаров брэнда(ов): ")
+from collections import Counter
 
-# TODO: your code here
+c = Counter(dupl)
+
+print(c.most_common())
+
 
 print("На складе самый дорогой товар брэнда(ов): ")
 
-# TODO: your code here
+max_p=items[0]
+for p in items:
+    if p['price']>max_p['price']:
+        max_p=p
+print(max_p['brand'])
