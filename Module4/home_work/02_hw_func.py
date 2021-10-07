@@ -4,10 +4,16 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
+def distance(Xa, Ya, Xb, Yb,Xc, Yc):
+    ab= ((abs(Xb - Xa))**2+(abs(Yb-Ya))**2)**0.5
+    bc = ((abs(Xb - Xc)) ** 2 + (abs(Yb- Yc)) ** 2) ** 0.5
+    ac = ((abs(Xa - Xc)) ** 2 + (abs(Ya - Yc)) ** 2) ** 0.5
+    if ab<=bc and ab<=ac:
+        print("Самый короткий отрезок ab")
+    elif bc<=ab and bc<=ac:
+        print("Самый короткий отрезок bc")
+    else:
+        print("Самый короткий отрезок ac")
     pass
 
-
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+print(distance(1, 1, 4, 2,3, 4))
